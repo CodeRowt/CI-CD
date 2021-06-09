@@ -1,1 +1,8 @@
+stages: # Stages in the pipeline
+ - test # Stage name
 
+test: # Stage
+ stage: test # Stage name
+ image: python # Image for the stage executer
+ script: # Command(s) to be executed (linux commands since we are using a linux image)
+  - python3 test.py # The test script we just made
